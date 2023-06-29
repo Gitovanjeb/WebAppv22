@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Administratorske Kontrole</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+            .btn-primary:hover {
+                background-color: #0069d9;
+                border-color: #0062cc;
+            }
+
+        #content {
+            margin-top: 40px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Administratorske Kontrole</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Profil Administratora</h5>
+                        <p class="card-text">Pogledaj i izmeni svoj profil.</p>
+                        <a href="#" class="btn btn-primary btn-block card-link" id="profileButton">Idi na profil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Upravljaj proizvodima</h5>
+                        <p class="card-text">Lista i sortiranje proizvoda</p>
+                        <a href="#" class="btn btn-primary btn-block card-link" id="productsButton">Idi na listu proizvoda</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Upravljaj Korisnicima</h5>
+                        <p class="card-text">Lista i sortiranje korisnika</p>
+                        <a href="#" class="btn btn-primary btn-block card-link" id="usersButton">Idi na korisnicku listu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Odobravanje recenzija</h5>
+                        <p class="card-text">Pogledaj i odobri recenzije</p>
+                        <a href="#" class="btn btn-primary btn-block card-link" id="reviewsButton">Idi na recenzije</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Upravljaj porudzbinama</h5>
+                        <p class="card-text">Pogledaj porudzbine</p>
+                        <a href="#" class="btn btn-primary btn-block card-link" id="ordersButton">Idi na porudzbine</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content"></div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Profile Button Click
+            $('#profileButton').click(function () {
+                window.location.href = "KupacProfil.html";
+            });
+
+            // Products Button Click
+            $('#productsButton').click(function () {
+                // Add your logic here to handle the products button click
+                window.location.href = "AdministratorProizvodi.html";
+            });
+
+            // Users Button Click
+            $('#usersButton').click(function () {
+                window.location.href = "AdministratorKorisnici.html";
+            });
+
+            // Reviews Button Click
+            $('#reviewsButton').click(function () {
+                // Add your logic here to handle the reviews button click
+                window.location.href = "AdministratorRecenzije.html";
+            });
+
+            // Orders Button Click
+            $('#ordersButton').click(function () {
+                // Add your logic here to handle the orders button click
+                window.location.href = "AdministratorOrders.html";
+            });
+        });
+    </script>
+</body>
+</html>
